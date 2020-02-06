@@ -1,3 +1,42 @@
-view{
-  color: var(--themeColor);
+.index_swiper swiper {
+  width: 750rpx;
+  height: 320rpx;
+}
+.index_swiper swiper image {
+  width: 100%;
+}
+.index_cat {
+  display: flex;
+}
+.index_cat navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.index_cat navigator image {
+  width: 100%;
+}
+.index_floor .floor_title {
+  padding: 5rpx 0;
+}
+.index_floor .floor_title image {
+  width: 100%;
+}
+.index_floor .floor_item {
+  overflow: hidden;
+}
+.index_floor .floor_item navigator {
+  float: left;
+  width: 33.3%;
+}
+.index_floor .floor_item navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  border-left: 10rpx solid #fff;
+}
+.index_floor .floor_item navigator:nth-child(2),
+.index_floor .floor_item navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.index_floor .floor_item navigator image {
+  height: 100%;
+  width: 100%;
 }

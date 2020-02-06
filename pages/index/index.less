@@ -1,0 +1,48 @@
+.index_swiper{
+    swiper {
+        width: 750rpx;
+        height: 320rpx;
+        image{
+            width: 100%;
+        }
+    }
+}
+.index_cat{
+    display: flex;
+    navigator{
+        flex:1;
+        padding: 20rpx;
+        image{
+          width: 100%;
+        }
+    }
+}
+
+.index_floor{
+    .floor_title{
+        padding: 5rpx 0;
+        image{
+            width: 100%;
+        }
+    }
+    .floor_item{
+        overflow: hidden;
+        navigator{
+            float: left;
+            width: 33.3%;
+            &:nth-last-child(-n+4){
+                height: 33.33vw * 386 / 232/2;
+                border-left: 10rpx solid #fff;
+            }
+            //2 3图片增加下边距
+            &:nth-child(2),
+            &:nth-child(3){
+                border-bottom: 10rpx solid #fff;
+            }
+            image{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
