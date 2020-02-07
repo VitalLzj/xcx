@@ -23,28 +23,28 @@ Page({
 
   getSwiperList() {
     request({
-      url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata',
+      url: 'home/swiperdata',
     }).then((result) => {
       this.setData({
-        swiperList: result.data.message
+        swiperList: result
       });
     })
   },
   getCatList() {
     request({
-      url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
+      url: 'home/catitems',
     }).then((result) => {
       this.setData({
-        catList: result.data.message
+        catList: result
       });
     })
   },
   getFloorList() {
     request({
-      url: 'https://api.zbztb.cn/api/public/v1/home/floordata',
+      url: 'home/floordata',
     }).then((result) => {
       this.setData({
-        floorList: result.data.message
+        floorList: result
       });
     })
   },

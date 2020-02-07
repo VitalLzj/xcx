@@ -1,4 +1,5 @@
 import { request } from "../../request/index.js";
+import regeneratorRuntime from '../../lib/runtime/runtime'
 
 // pages/category/index.js
 Page({
@@ -38,21 +39,33 @@ Page({
   //定义接口返回值
   Cates: [],
 
-  getMenuList() {
-    request({
-      url: "https://api.zbztb.cn/api/public/v1/categories"
-    }).then((result) => {
-      this.Cates = result.data.message;
-      wx.setStorageSync("cates", {
-        _time: Date.now(),
-        _data: result.data.message
-      });
-      this.setData({
-        leftMenuList: this.Cates.map(
-          v => v.cat_name
-        ),
-        rightContent: this.Cates[0].children
-      });
+  async getMenuList() {
+    // request({
+    //   url: "categories"
+    // }).then((result) => {
+    //   this.Cates = result.data.message;
+    //   wx.setStorageSync("cates", {
+    //     _time: Date.now(),
+    //     _data: result.data.message
+    //   });
+    //   this.setData({
+    //     leftMenuList: this.Cates.map(
+    //       v => v.cat_name
+    //     ),
+    //     rightContent: this.Cates[0].children
+    //   });
+    // });
+    const result = await request({ url: "categories" });
+    this.Cates = result;
+    wx.setStorageSync("cates", {
+      _time: Date.now(),
+      _data: result
+    });
+    this.setData({
+      leftMenuList: this.Cates.map(
+        v => v.cat_name
+      ),
+      rightContent: this.Cates[0].children
     });
   },
   handleItem(e) {
