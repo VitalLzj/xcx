@@ -52,6 +52,7 @@ Page({
     );
     if (index === -1) {
       this.goodsObj2.num = 1;
+      this.goodsObj2.checked = true;
       cart.push(this.goodsObj2);
     } else {
       cart[index].num++;

@@ -29,7 +29,7 @@
             <view class="item_text">分享</view>
             <button open-type="share"></button>
         </view>
-        <navigator class="tool_item" url="/pages/collect/index" open-type="switchTab">
+        <navigator class="tool_item" url="/pages/cart/index" open-type="switchTab">
             <text class="iconfont icongouwuche"></text>
             <view class="item_text">购物车</view>
         </navigator>

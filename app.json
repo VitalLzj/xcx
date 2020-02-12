@@ -38,7 +38,7 @@
         "selectedIconPath": "icons/2.png"
       },
       {
-        "pagePath": "pages/collect/index",
+        "pagePath": "pages/cart/index",
         "text": "购物车",
         "iconPath": "icons/5.png",
         "selectedIconPath": "icons/3.png"
