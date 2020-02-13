@@ -1,1 +1,113 @@
-/* pages/user/index.wxss */
+page {
+  background-color: gray;
+}
+.user_info_wrap {
+  background-color: red;
+  height: 45vh;
+  position: relative;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 45vh;
+  -webkit-filter: blur(5px);
+  /* Chrome, Safari, Opera */
+  filter: blur(10rpx);
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+.user_info_wrap .user_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20rpx;
+  font-size: 36rpx;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  border: 1rpx solid yellowgreen;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  width: 90%;
+  top: -40rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.user_content .user_main .his_wrap {
+  background-color: #fff;
+  display: flex;
+}
+.user_content .user_main .his_wrap navigator {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+}
+.user_content .user_main .his_wrap navigator .his_num {
+  color: red;
+}
+.user_content .user_main .orders_wrap {
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.user_content .user_main .orders_wrap .orders_title {
+  color: #666;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.user_content .user_main .orders_wrap .order_content {
+  display: flex;
+}
+.user_content .user_main .orders_wrap .order_content navigator {
+  padding: 10rpx 20rpx;
+  flex: 1;
+  text-align: center;
+}
+.user_content .user_main .orders_wrap .order_content navigator .iconfont {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.user_content .user_main .orders_wrap .order_content navigator .order_name {
+  color: #666;
+}
+.user_content .user_main .app_info_line {
+  background-color: #fff;
+  padding: 20rpx;
+  color: #666;
+}
+.user_content .user_main .address_wrap {
+  margin-top: 10rpx;
+}
+.user_content .user_main .app_info_wrap {
+  margin-top: 10rpx;
+  background-color: #fff;
+  color: #666;
+}
+.user_content .user_main .app_info_wrap .app_info_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .user_main .recommend_wrap {
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+}
